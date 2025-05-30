@@ -48,7 +48,11 @@ Page({
       item: [{
         title: '上传文件',
         page: 'uploadFile'
-      }]
+      },{
+        title: '股票数据分析',
+        page: 'stock'
+      }
+    ]
     }, {
       title: '人工智能',
       tip: '人工智能服务',
@@ -56,7 +60,11 @@ Page({
       item: [{
         title: '部署服务',
         page: 'deployService'
-      }]
+      },{
+        title: '大模型彩票预测',
+        page: 'caipiao'
+      }
+    ]
     }],
     
     envList,
