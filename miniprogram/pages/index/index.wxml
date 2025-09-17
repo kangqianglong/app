@@ -1,32 +1,34 @@
-<!--index.wxml-->
+<!-- 首页布局：标题 + 功能按钮 + 跳转入口 -->
 <view class="container">
-
-  <view class="title">康强龙的小程序</view>
-
-  <view class="top_tip">我的小程序开发，土木计算器</view>
-
-  <view class="power" wx:key="title" wx:for="{{powerList}}" wx:for-item="power">
-    <view class="power_info" data-index="{{index}}" bindtap="onClickPowerInfo">
-      <view class="power_info_text">
-        <view class="power_info_text_title">{{power.title}}</view>
-        <view class="power_info_text_tip">{{power.tip}}</view>
-      </view>
-      <image wx:if="{{!power.showItem}}" class="power_info_more" src="../../images/arrow.svg"></image>
-      <image wx:if="{{power.showItem}}" class="power_info_less" src="../../images/arrow.svg"></image>
-    </view>
-    <view wx:if="{{power.showItem}}">
-      <view wx:key="title" wx:for="{{power.item}}">
-        <view class="line"></view>
-        <view class="power_item" bindtap="jumpPage" data-page="{{item.page}}">
-          <view class="power_item_title">{{item.title}}</view>
-          <image class="power_item_icon" src="../../images/arrow.svg"></image>
-        </view>
-      </view>
-    </view>
+  <!-- 顶部标题区 -->
+  <view class="header">
+    <text class="title">首页</text>
+    <text class="subtitle">欢迎使用小程序</text>
   </view>
 
-  <view class="environment" bindtap="onChangeShowEnvChoose">目前还是开发环境阶段 {{ selectedEnv.alias }}</view>
+  <!-- 功能按钮区 -->
+  <view class="btn-group">
+    <!-- 跳转到登录页按钮 -->
+    <button 
+      class="func-btn" 
+      bindtap="goToLogin"  
+    >
+      去登录
+    </button>
 
-  <cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+    <!-- 跳转到个人中心按钮 -->
+    <button 
+      class="func-btn" 
+      bindtap="goToMine"   
+    >
+      个人中心
+    </button>
+  </view>
 
+  <!-- 其他内容区（示例：列表） -->
+  <view class="list">
+    <view class="list-item" bindtap="goToDetail">
+      <text>查看详情 →</text>
+    </view>
+  </view>
 </view>

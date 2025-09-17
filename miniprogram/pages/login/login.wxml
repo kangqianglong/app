@@ -1,0 +1,40 @@
+<!-- 登录页面：账号密码输入框 + 登录按钮 + 提示信息 -->
+<view class="login-container">
+  <!-- 标题 -->
+  <view class="title">账号登录</view>
+
+  <!-- 账号输入框 -->
+  <view class="input-group">
+    <label class="input-label">账号</label>
+    <input 
+      class="input-box" 
+      placeholder="请输入账号" 
+      bindinput="handleUsernameInput" 
+      value="{{username}}"
+    />
+  </view>
+
+  <!-- 密码输入框 -->
+  <view class="input-group">
+    <label class="input-label">密码</label>
+    <input 
+      class="input-box" 
+      placeholder="请输入密码" 
+      bindinput="handlePasswordInput" 
+      value="{{password}}"
+      type="password" 
+    />
+  </view>
+
+  <!-- 登录按钮 -->
+  <button 
+    class="login-btn" 
+    bindtap="handleLogin"
+    disabled="{{isLoading}}" 
+  >
+    {{isLoading ? '登录中...' : '登录'}}
+  </button>
+
+  <!-- 提示信息（如错误提示） -->
+  <view class="tips" wx:if="{{tips}}">{{tips}}</view>
+</view>
