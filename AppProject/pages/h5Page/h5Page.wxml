@@ -1,0 +1,3 @@
+<view class="container">
+    <web-view src="https://example.com/your-h5-page.html"></web-view>
+</view>
