@@ -1,66 +1,27 @@
-// pages/index/index.js
 Page({
+  data: {},
 
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  // 跳转到登录页
+  goToLogin() {
+    // 方式1：保留当前页面，跳转后可返回（适合临时跳转）
+    wx.navigateTo({
+      url: '/pages/login/login'  // 目标页面路径（绝对路径，以/开头）
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  // 跳转到个人中心
+  goToMine() {
+    // 方式2：关闭当前页面，跳转后不可返回（适合流程性跳转）
+    wx.redirectTo({
+      url: '/pages/mine/mine'
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
+  // 跳转到详情页（示例）
+  goToDetail() {
+    // 带参数跳转（如传递ID）
+    wx.navigateTo({
+      url: '/pages/detail/detail?id=123&name=示例'  // 参数用?拼接，&分隔
+    });
   }
-})
+});
