@@ -47,7 +47,15 @@
 
 .list-item {
   padding: 30rpx;
-  background-color: white;
+  background-color: yellow;
+  border-radius: 10rpx;
+  text-align: center;
+  color: #4F9EFD;
+  font-size: 28rpx;
+}
+.list-item-logininfo {
+  padding: 30rpx;
+  background-color: gray;
   border-radius: 10rpx;
   text-align: center;
   color: #4F9EFD;

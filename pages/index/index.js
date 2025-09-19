@@ -20,8 +20,17 @@ Page({
   // 跳转到详情页（示例）
   goToDetail() {
     // 带参数跳转（如传递ID）
-    wx.navigateTo({
+    wx.navigateTos({
       url: '/pages/detail/detail?id=123&name=示例'  // 参数用?拼接，&分隔
     });
-  }
+  },
+  
+  // 跳转到用户列表（示例）
+  goToInginInfo() {
+      // 带参数跳转（如传递ID）
+     wx.navigateTos({
+       url: '/pages/userList/userList'  // 参数用?拼接，&分隔
+      });
+   }
+
 });

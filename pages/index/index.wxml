@@ -30,5 +30,8 @@
     <view class="list-item" bindtap="goToDetail">
       <text>查看详情 →</text>
     </view>
+   <!-- <view class="list-item-logininfo" bindtap="goToInginInfo">
+      <text>用户列表 →</text>
+    </view>  --> 
   </view>
 </view>

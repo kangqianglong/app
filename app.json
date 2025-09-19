@@ -1,13 +1,41 @@
 {
+  "tabBar": {
+    "position": "bottom",
+    "color": "#999",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tab/home.png",
+        "selectedIconPath": "/images/tab/home-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/tab/mine.png",
+        "selectedIconPath": "/images/tab/mine-active.png"
+      },
+      {
+        "pagePath": "pages/userList/userList",
+        "text": "用户列表",
+        "iconPath": "/images/tab/user.png",
+        "selectedIconPath": "/images/tab/user-active.png"
+      }
+    ]
+  },
   "pages": [
     "pages/index/index",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/userList/userList",
+    "pages/home/home"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "助力美好生活小程序",
+    "navigationBarTitleText": "小康康助力美好生活小程序",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

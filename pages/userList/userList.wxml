@@ -1,0 +1,11 @@
+<!-- pages/userList/userList.wxml -->
+<view class="container">
+  <view class="title">用户列表</view>
+  <!-- 循环渲染用户数据 -->
+  <view class="user-item" wx:for="{{userList}}" wx:key="id">
+    <view>姓名: {{item.name}}</view>
+    <view>年龄: {{item.years}}</view>
+    <view>性别: {{item.sex}}</view>
+    <view>密码: {{item.password}}</view>
+  </view>
+</view>
