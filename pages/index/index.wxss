@@ -33,7 +33,7 @@
 
 .func-btn {
   flex: 1;  /* 按钮平分宽度 */
-  height: 80rpx;
+  height: 120rpx;
   line-height: 80rpx;
   background-color: #4F9EFD;
   color: white;
@@ -42,12 +42,12 @@
 
 /* 列表项样式 */
 .list {
-  margin-top: 50rpx;
+  margin-top: 80rpx;
 }
 
 .list-item {
   padding: 30rpx;
-  background-color: yellow;
+  background-color: rgb(0, 255, 106);
   border-radius: 10rpx;
   text-align: center;
   color: #4F9EFD;
